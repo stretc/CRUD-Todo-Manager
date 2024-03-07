@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Page CSS */
+.home-container {
+  background-color: #fec5bb;
+  width: 100vw;
+  height: 100vh;
+}
+
+.input-container {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container>input {
+  height: 55px;
+  width: 350px;
+  margin-right: 20px;
+  border-radius: 3px;
+  text-align: center;
+  border: 2px solid rgba(99, 99, 99, 0.2);
+  font-size: 18px;
+
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #cecece;
+  }
+}
+
+.date-picker {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cecece;
+  }
+
+  &::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+    border-radius: 50px;
+  }
+}
+
+.add-btn {
+  color: black;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: rgba(122, 122, 122, 0.2);
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: background-color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(116, 116, 116, .2);
+    transform: scale(1.05);
+  }
+}
+
+.data-table {
+  background-color: #fae1dd;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin: 25px 0;
+  text-align: center;
+  width: 50%;
+  border-collapse: collapse;
+  text-transform: capitalize;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+}
+
+.cell-head,
+.cell-task {
+  padding: 15px;
+}
+
+.button-cell {
+  width: 225px;
+}
+
+.delete-btn,
+.edit-btn {
+  cursor: pointer;
+  height: 35px;
+  width: 70px;
+  padding: 0;
+  margin-right: 5px;
+}
+
+/* Update Page */
+.up-container {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.up-container>form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-container>form>input {
+  height: 50px;
+  width: 150px;
+  margin: 15px;
+
+  &:hover {
+    background-color: #cecece;
+  }
+}
+
+.up-btn {
+  margin: 15px;
+  height: 35px;
+  width: 70px;
+  cursor: pointer;
+}
